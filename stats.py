@@ -21,7 +21,7 @@ def sort_on(items):
 
 def sort_char_count(char_count):
     char_sort = []
-    for c, n in char_count:
-        char_sort.append({"char": c, "num": n})
+    for char in char_count:
+        char_sort.append({"char": char, "num": char_count[char]})
     char_sort.sort(reverse=True, key=sort_on)
     return char_sort
